@@ -15,6 +15,8 @@
 		5E59EC14235D4FF400BCFAFE /* Apple_PieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E59EC13235D4FF400BCFAFE /* Apple_PieTests.swift */; };
 		5E59EC1F235D4FF500BCFAFE /* Apple_PieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E59EC1E235D4FF500BCFAFE /* Apple_PieUITests.swift */; };
 		5E59EC2D235D5A3C00BCFAFE /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E59EC2C235D5A3C00BCFAFE /* Game.swift */; };
+		5E5F5ACF25340C04008E6803 /* correctAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E5F5ACE25340C04008E6803 /* correctAnswer.mp3 */; };
+		5E5F5AD825356063008E6803 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5F5AD725356062008E6803 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		5E59EC1E235D4FF500BCFAFE /* Apple_PieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_PieUITests.swift; sourceTree = "<group>"; };
 		5E59EC20235D4FF500BCFAFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E59EC2C235D5A3C00BCFAFE /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		5E5F5ACE25340C04008E6803 /* correctAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correctAnswer.mp3; sourceTree = "<group>"; };
+		5E5F5AD725356062008E6803 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5F5AD825356063008E6803 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,7 @@
 				5E59EC12235D4FF400BCFAFE /* Apple PieTests */,
 				5E59EC1D235D4FF500BCFAFE /* Apple PieUITests */,
 				5E59EBFC235D4FF300BCFAFE /* Products */,
+				5E5F5AD625356062008E6803 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +112,7 @@
 				5E59EC07235D4FF400BCFAFE /* LaunchScreen.storyboard */,
 				5E59EC0A235D4FF400BCFAFE /* Info.plist */,
 				5E59EC2C235D5A3C00BCFAFE /* Game.swift */,
+				5E5F5ACE25340C04008E6803 /* correctAnswer.mp3 */,
 			);
 			path = "Apple Pie";
 			sourceTree = "<group>";
@@ -126,6 +133,14 @@
 				5E59EC20235D4FF500BCFAFE /* Info.plist */,
 			);
 			path = "Apple PieUITests";
+			sourceTree = "<group>";
+		};
+		5E5F5AD625356062008E6803 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E5F5AD725356062008E6803 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E59EC09235D4FF400BCFAFE /* LaunchScreen.storyboard in Resources */,
+				5E5F5ACF25340C04008E6803 /* correctAnswer.mp3 in Resources */,
 				5E59EC06235D4FF400BCFAFE /* Assets.xcassets in Resources */,
 				5E59EC04235D4FF300BCFAFE /* Main.storyboard in Resources */,
 			);

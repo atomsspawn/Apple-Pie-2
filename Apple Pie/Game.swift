@@ -7,13 +7,28 @@
 //
 
 import Foundation
+import AVFoundation
+
+
+
+
 
 struct Game {
+    
+    
+    
+
+    
     var word: String
     var incorrectMovesRemaining: Int
     var guessedLetters: [Character]
+    // correct guess affirmation
+    //sound file
     
     
+
+    
+    //correct guess affermation above
     var formattedWord: String {
         var guessedWord = ""
         for letter in word {
