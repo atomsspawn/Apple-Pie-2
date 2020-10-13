@@ -10,13 +10,15 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-    
-    
-    
+    //play sound
+    var audioPlayer = AVAudioPlayer()
+    //end play sound
     @IBOutlet weak var treeImageView: UIImageView!
     @IBOutlet weak var correctWordLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet var letterButton: [UIButton]!
+    
+    
     
     var listOfWords = ["buccaneer", "swift", "glorious", "incandenscent", "bug", "program"]
     let incorrectMovesAllowed = 7
@@ -38,7 +40,7 @@ class ViewController: UIViewController {
         let letterString = sender.title(for: .normal)!
         let letter = Character(letterString.lowercased())
         currentGame.playerGuessed(letter: letter)
-        
+        playSound(file: "correctAnswer", ext: "mp3")
         updateGameState()
     }
     
@@ -46,14 +48,33 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //play sound
         
         
-        
+        //end play sound
         //sound file
         
         
         newRound()
     }
+    
+    //play sound
+    
+    func playSound(file:String, ext:String) -> Void{
+    do {
+    if let fileURL = Bundle.main.path(forResource: "correctAnswer", ofType: "mp3") {
+        audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
+        print("continue processing")
+        audioPlayer.play()
+    } else {
+    print("Error No Sound File")
+    }
+    } catch  {
+        print("cant play audio")
+    }
+    }
+    //end play sound
+    
 
     func newRound() {
         if !listOfWords.isEmpty {
