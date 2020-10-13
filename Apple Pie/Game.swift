@@ -22,10 +22,9 @@ struct Game {
     var word: String
     var incorrectMovesRemaining: Int
     var guessedLetters: [Character]
-    // correct guess affirmation
-    //sound file
+
     
-    
+   
 
     
     //correct guess affermation above
